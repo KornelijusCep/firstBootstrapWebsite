@@ -1,0 +1,141 @@
+* {
+	font-family: ;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------  KIEKVIENO PUSLAPIO TAG RASYMAS PO RAIDE  ---------- */  
+
+.pageHeadline {
+	text-align: center;	
+	padding-top: 25px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+.typingText {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* --------  NAV BAR ITEMS GLOBAL  ---------- */  
+.nav-item {
+	font-size: 20px;
+	text-align: center;
+}
+
+#buttonsDiv { display: flex; }
+#buttonsDiv a { margin: 10px; }
+
+main {
+	flex: 1 0 auto;
+}
+
+#settingsButton { cursor: not-allowed; }
+
+#registerButtonInMain {
+	margin: 20px;
+	margin-left: 145px;
+}
+/* --------  FOOTER STICKING TO VIEWPOINT END   ---------- */  
+
+footer {
+  border-radius: 15px 15px 0 0;
+  flex-shrink: 0;
+  width: 80%;
+  align-self: center;
+  color: white;
+}
+footer .container { padding-top: 12px; text-align: center; }
+.back-to-top { color: white; }
+
+/* --------  KEITIMASIS PAGAL EKRANU DYDZIUS   ---------- */  
+
+/* - TELEFONO EKRANAS - */  
+@media (max-width: 575.98px) { 
+	
+	#buttonsDiv{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.navbar-brand {
+		position: relative;
+		left: 50%;
+		transform: translatex(-50%);
+	}
+		.card-columns {
+		column-count: 1;
+	}
+}
+
+/* - TELEFONU-TABLET EKRANAI - */  
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	
+	#buttonsDiv{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.navbar-brand {
+		position: relative;
+		left: 50%;
+		transform: translatex(-50%);
+	}
+	.card-columns {
+		column-count: 1;
+	}
+}
+
+/* TABLETAI */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	
+	#buttonsDiv{
+		display: flex;
+	  	align-items: center;
+	  	justify-content: center;
+	}
+	.navbar-brand {
+		position: relative;
+		left: 50%;
+		transform: translatex(-50%);
+	}
+	.card-columns {
+		column-count: 2;
+	}
+	#secondRow {
+		width: 100%;
+	}
+
+}
+
+/* IPRASTI KOMPIUTERIU EKRANAI */
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+/* DIDELI KOMPIUTERIO EKRANAI - TELEVISORIAI */
+@media (min-width: 1200px) { 
+	.card-columns {
+		column-count: 3;
+	}
+}

@@ -1,0 +1,93 @@
+body {
+  	display: flex;
+  	flex-direction: column;
+
+/*
+  	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;*/
+}
+/*
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+*/
+/* --------  LOGIN FORM   ---------- */
+.login-register-form-div {
+  	flex: 1 0 auto;
+}
+.login-register-form {
+	padding-top: 50px;
+    width: 340px;
+    margin: 50px auto;
+  	font-size: 15px;
+}
+.login-register-form form {
+    margin-bottom: 15px;
+    padding: 30px;
+
+    background: hsla(0,0%,100%,.3);
+    position: relative;
+    overflow: hidden;
+    border-radius: .3em;
+	box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset,
+	            0 .5em 1em rgba(0, 0, 0, 0.6);
+	text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
+}
+
+.login-register-form form::before {
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	-webkit-filter: blur(20px);
+	filter: blur(20px);
+}
+
+.login-register-form h2 {
+    margin: 0 0 15px;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 575.98px) { 
+	.login-register-form { 
+		padding-top: 25px; 
+	}
+}
+
+/* Mazi irenginiai */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	.login-register-form { 
+		padding-top: 25px; 
+	}
+}
+
+/* Tabletai */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	.login-register-form { 
+		padding-top: 25px; 
+	}
+}
+
+#error_message {
+	margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
