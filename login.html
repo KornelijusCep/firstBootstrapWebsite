@@ -19,38 +19,35 @@
 	<body>
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<div class="container">
+				<div class="container">
+					<a class="navbar-brand"><h3 class="h1">Gigabaitas</h3></a>
+					<!-- ATSIRANDA BUTTON KAI SUMAZINAMAS EKRANAS -->
+					<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+						<span class="navbar-toggler-icon" ></span>
+					</button>
 
-				<a class="navbar-brand"><h3 class="h1">Gigabaitas</h3></a>
+					<div class="collapse navbar-collapse" id="navbarMenu">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a href="index.html" class="nav-link">PRADŽIA</a>
+							</li>
+							<li class="nav-item">
+								<a href="content.html" class="nav-link">GALERIJA</a>
+							</li>
+							<li class="nav-item">
+								<a href="about.html" class="nav-link">APIE MUS</a>
+							</li>
+							<li class="nav-item">
+								<a id="gameButton" href="" class="nav-link">ZAIDIMAS</a>
+							</li>
+						</ul>
 
-				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-					<span class="navbar-toggler-icon" ></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarMenu">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<a href="index.html" class="nav-link">PRADŽIA</a>
-						</li>
-						<li class="nav-item">
-							<a href="content.html" class="nav-link">GALERIJA</a>
-						</li>
-						<li class="nav-item">
-							<a href="about.html" class="nav-link">APIE MUS</a>
-						</li>
-						<li class="nav-item">
-							<a id="settingsButton" href="" class="nav-link"> NUSTATYMAI</a>
-						</li>
-					</ul>
-
-					<div id="buttonsDiv">
-						<a href="login.html" type="button" class="btn btn-primary text-right"">Prisijungimas</a>
-						<a href="register.html" type="button" class="btn btn-success text-right"">Registracija</a>
+						<div id="navBarButtons">
+							<a href="login.html" class="btn btn-primary text-right">Prisijungimas</a>
+							<a href="register.html" class="btn btn-success text-right">Registracija</a>
+						</div>
 					</div>
-
-
 				</div>
-			</div>
 			</nav>
 		</header>
 
@@ -78,31 +75,31 @@
 			        </div>        
 				</form>
 
-				<p class="text-center">Neturi paskyros? Susikurk <a class="text-light bg-dark" href="register.html">čia</a></p>
+				<p class="text-center">Neturi paskyros? Susikurk <a href="register.html">čia</a></p>
 			</div>
 		</div>
 
-<footer class="bg-dark">
-	      <div class="container">
-	      	<div class="row">
-	      		
-			    <div class="col-sm">
-			      	<p>Made by Kornelijus Čepas</p>
-			    </div>
+		<footer class="bg-dark">
+	    	<div class="container">
+	      		<div class="row">					
+					<div class="col-sm">
+						<p>Made by Kornelijus Čepas</p>
+					</div>
 
-			    <div class="col-sm">
-			        <div class="custom-control custom-switch">
-			          <input type="checkbox" class="custom-control-input" id="darkSwitch">
-			          <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-			        </div>    
-          			<script src="js/dark-mode-switch.min.js"></script>
-        		</div>
+					<div class="col-sm">
+						<div class="custom-control custom-switch">
+						<input type="checkbox" class="custom-control-input" id="darkSwitch">
+						<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+						</div>
+						<script src="js/dark-mode-switch.min.js"></script>
+					</div>
 
-			    <div class="col-sm">
-			      <a class="back-to-top" href="#"> &uarr; Grįžti į viršų &uarr;</a>
-			    </div>
-			  </div>      
-	    </footer>
+					<div class="col-sm">
+						<a class="back-to-top" href="#"> &uarr; Grįžti į viršų &uarr;</a>
+					</div>
+				</div>      
+			</div>
+		</footer>
 
 	</body>
 </html>

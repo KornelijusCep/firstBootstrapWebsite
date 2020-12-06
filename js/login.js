@@ -35,26 +35,31 @@ function validateRegisterForm() {
   var w = document.forms["registerForm"]["repeatPassword"].value;
 
   if (x == "" || y == "") {
-    alert("Neivesti asmeniniai duomenys");
+    text = "Neivesti asmeniniai duomenys";
+    error_message.innerHTML = text;
     return false;
   }
   else if ( z == "")
   {
-  	alert("Neįvestas slaptažodis");
+    text = "Neįvestas slaptažodis";
+    error_message.innerHTML = text;
     return false;
   }
   else if ( w == "")
   {
-  	alert("Neįvestas pakartotinas slaptažodis");
+    text = "Neįvestas pakartotinas slaptažodis";
+    error_message.innerHTML = text;
     return false;
   }
   else if ( z != w)
   {
-  	alert("Slaptažodžiai nesutampa!");
+    text = "Slaptažodžiai nesutampa!";
+    error_message.innerHTML = text;
     return false;
   }
   else {
-  	alert("Sėkmingai užsiregistravote");
+    text = "Sėkmingai užsiregistravote";
+    error_message.innerHTML = text;
   	return true;
   }
 }

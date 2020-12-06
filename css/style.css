@@ -1,5 +1,5 @@
 * {
-	font-family: ;
+
 }
 
 html, body {
@@ -11,6 +11,32 @@ body {
   flex-direction: column;
 }
 
+/* --------  NAV BAR ITEMS GLOBAL  ---------- */  
+.nav-item {
+	font-size: 20px;
+	text-align: center;
+}
+
+#navBarButtons { 
+	display: flex; 
+	justify-content: center; 
+}
+
+#navBarButtons a { margin: 10px; }
+
+#gameButton { cursor: not-allowed; }
+
+#registerButtonInMain {
+	margin: 20px;
+	margin-left: 145px;
+}
+
+/* --------  MAIN CONTENT GLOBAL   ---------- */  
+
+main {
+	flex: 1 0 auto;
+}
+
 /* --------  KIEKVIENO PUSLAPIO TAG RASYMAS PO RAIDE  ---------- */  
 
 .pageHeadline {
@@ -18,47 +44,28 @@ body {
 	padding-top: 25px;
 }
 
-/* The typing effect */
+/* RASYMO EFEKTAS */
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
-/* The typewriter cursor effect */
+/* RASYMO LINIJOS EFEKTRAS */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
 .typingText {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  overflow: hidden; /* Privercia neparodyt kol nepasibaigia animacija */
+  white-space: nowrap; /* Viska palieka vienoje eiluteje */
+  margin: 0 auto;
+  letter-spacing: .15em; /* Tarpai tarp raidziu */
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
 }
 
-/* --------  NAV BAR ITEMS GLOBAL  ---------- */  
-.nav-item {
-	font-size: 20px;
-	text-align: center;
-}
-
-#buttonsDiv { display: flex; }
-#buttonsDiv a { margin: 10px; }
-
-main {
-	flex: 1 0 auto;
-}
-
-#settingsButton { cursor: not-allowed; }
-
-#registerButtonInMain {
-	margin: 20px;
-	margin-left: 145px;
-}
-/* --------  FOOTER STICKING TO VIEWPOINT END   ---------- */  
+/* --------  FOOTER STICKING TO VIEWPOINT END GLOBAL   ---------- */  
 
 footer {
   border-radius: 15px 15px 0 0;
@@ -67,6 +74,7 @@ footer {
   align-self: center;
   color: white;
 }
+
 footer .container { padding-top: 12px; text-align: center; }
 .back-to-top { color: white; }
 
@@ -74,30 +82,26 @@ footer .container { padding-top: 12px; text-align: center; }
 
 /* - TELEFONO EKRANAS - */  
 @media (max-width: 575.98px) { 
-	
-	#buttonsDiv{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
 	.navbar-brand {
 		position: relative;
 		left: 50%;
 		transform: translatex(-50%);
 	}
-		.card-columns {
+	.card-columns {
 		column-count: 1;
+	}
+    /* - PADARO NUO DARK MODE MYGTUKO TARPA - */
+	.custom-switch {
+		padding-bottom: 15px;
+	}
+	.featurette-image {
+		width: 50%;
 	}
 }
 
 /* - TELEFONU-TABLET EKRANAI - */  
 @media (min-width: 576px) and (max-width: 767.98px) { 
-	
-	#buttonsDiv{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+
 	.navbar-brand {
 		position: relative;
 		left: 50%;
@@ -110,12 +114,7 @@ footer .container { padding-top: 12px; text-align: center; }
 
 /* TABLETAI */
 @media (min-width: 768px) and (max-width: 991.98px) { 
-	
-	#buttonsDiv{
-		display: flex;
-	  	align-items: center;
-	  	justify-content: center;
-	}
+
 	.navbar-brand {
 		position: relative;
 		left: 50%;
@@ -124,10 +123,6 @@ footer .container { padding-top: 12px; text-align: center; }
 	.card-columns {
 		column-count: 2;
 	}
-	#secondRow {
-		width: 100%;
-	}
-
 }
 
 /* IPRASTI KOMPIUTERIU EKRANAI */
