@@ -16,7 +16,7 @@ $(document).ready(function() {
   let scrambledWord = "";
   // BOOLEAN ZAIDIMO EIGAI TIKRINTI AR DAR ZAIDZIAMA
   let startGame = false;
-
+  // SURINKTI TASKAI
   let collectedPoints;
 
   const generateNewWords = () => {
@@ -42,8 +42,9 @@ $(document).ready(function() {
   }
 
   button.addEventListener('click', function() {
-    
+
     if(!startGame){
+
       collectedPoints = parseInt(document.getElementById("points").innerHTML);
       leftLives = 3; 
       startGame = true;
@@ -54,6 +55,7 @@ $(document).ready(function() {
       message.innerHTML = scrambledWord;
       lives.innerHTML = leftLives;
       document.getElementById("points").innerHTML = collectedPoints;
+      button.innerHTML = "SPĖTI ŽODĮ";
     }
     else {
       let inputWord = input.value;
@@ -75,7 +77,7 @@ $(document).ready(function() {
         if(leftLives == 0)
         {
           startGame = false;
-          collectedPoints += leftLives;
+          collectedPoints = 0;
           message.innerHTML = `Pralaimejote. Zodis buvo: ${newWord}`;
           document.getElementById("points").innerHTML = collectedPoints;
           button.innerHTML = "Naujas zaidimas?"

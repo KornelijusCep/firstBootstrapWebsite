@@ -75,6 +75,14 @@ footer {
 footer .container { padding-top: 12px; text-align: center; }
 .back-to-top { color: white; }
 
+#sizeButton {
+	padding: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	height: 25px;
+}
+
 /* --------  KEITIMASIS PAGAL EKRANU DYDZIUS   ---------- */  
 
 /* - TELEFONO EKRANAS - */  
