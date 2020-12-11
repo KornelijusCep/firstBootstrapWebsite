@@ -8,6 +8,11 @@ body {
   font-size: 100%;
 }
 
+.dark-mode {
+	background-color: #111 !important;
+	color: #eee;
+  }
+
 /* --------  NAV BAR ITEMS GLOBAL  ---------- */  
 .nav-item {
 	font-size: 20px;
