@@ -6,12 +6,13 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 100%;
+  
 }
 
 .dark-mode {
-	background-color: #111 !important;
+	background: #111 !important;
 	color: #eee;
-  }
+  } 
 
 /* --------  NAV BAR ITEMS GLOBAL  ---------- */  
 .nav-item {
@@ -25,8 +26,6 @@ body {
 }
 
 #navBarButtons a { margin: 10px; }
-
-#gameButton { cursor: not-allowed; }
 
 #registerButtonInMain {
 	margin: 20px;
@@ -77,6 +76,10 @@ footer {
   color: white;
 }
 
+.container .row {
+	margin-bottom: 10px;
+}
+
 footer .container { padding-top: 12px; text-align: center; }
 .back-to-top { color: white; }
 
@@ -100,12 +103,20 @@ footer .container { padding-top: 12px; text-align: center; }
 	.card-columns {
 		column-count: 1;
 	}
-    /* - PADARO NUO DARK MODE MYGTUKO TARPA - */
-	.custom-switch {
-		padding-bottom: 15px;
+	footer {
+		width: 90%;
+		
 	}
 	.featurette-image {
 		width: 50%;
+	}	
+	#rightside {
+		margin: 20px;
+		margin-left: 50px;
+	}
+	.col-md-3 {
+		margin: 10px;
+		
 	}
 }
 
@@ -120,11 +131,28 @@ footer .container { padding-top: 12px; text-align: center; }
 	.card-columns {
 		column-count: 1;
 	}
+	footer {
+		width: 90%;
+		
+	}
+	#rightside {
+		margin: 20px;
+		margin-left: 50px;
+		width: 100%;
+	}
+	.col-md-3 {
+		margin: 10px;
+		text-align: center;
+	}
+
 }
 
 /* TABLETAI */
 @media (min-width: 768px) and (max-width: 991.98px) { 
 
+	#article {
+		display:none;
+	}
 	.navbar-brand {
 		position: relative;
 		left: 50%;
@@ -133,14 +161,131 @@ footer .container { padding-top: 12px; text-align: center; }
 	.card-columns {
 		column-count: 2;
 	}
+	#rightside {
+		margin: 20px;
+		margin-left: 50px;
+		margin: auto;
+	}
+	#rightsideMain  {
+		display:flex;
+		justify-content:space-around;
+	}
+	.col-md-5 {
+		margin-left: 50px;
+	}
+	.col-md-5 img {
+		margin-bottom: 25px	;
+	}
 }
 
 /* IPRASTI KOMPIUTERIU EKRANAI */
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	#rightside {
+		margin: auto;
+	}
+	#rightsideMain  {
+		display:flex;
+		justify-content:space-around;
+	}	
+	.col-md-5 {
+		margin-left: 50px;
+	}
+	.col-md-5 img {
+		margin-bottom: 25px;
+	}
+ }
 
 /* DIDELI KOMPIUTERIO EKRANAI - TELEVISORIAI */
 @media (min-width: 1200px) { 
 	.card-columns {
 		column-count: 3;
 	}
+	footer {
+		width: 80%;
+	}
+}
+
+
+#rightside {
+
+	/* NUO ZALSVOS I TAMSIAI PILKA PEREJIMAS*/
+	/*background: linear-gradient(rgb(181, 201, 117), rgb(91, 98, 102));*/
+
+	/* NUO GELSVOS I MELSVVA PER PUSE */
+	/* background: linear-gradient(#fb3 50%, #58a 50%); */
+
+	/* NUO GELSVOS I MELSVVA SU PROCENTALIU PEREJIMU */
+	/* background: linear-gradient(#fb3 30%, #58a 70%); */
+
+	/* NUO GELSVOSS I MELSVA LINIJOMIS ISSILIEJANT */
+	/* background: linear-gradient(45deg,
+	#fb3 25%, #58a , #58a ,
+	#fb3 , #fb3 , #58a); */
+
+	/* NUO GELSVOSS I MELSVA LINIJOMIS  */
+	/* background: linear-gradient(45deg,
+	#fb3 25%, #58a 0, #58a 50%,
+	#fb3 0, #fb3 75%, #58a 0);
+	background-size: 30px 30px; */
+
+	background: linear-gradient(rgb(181, 201, 117), rgb(91, 98, 102));
+	max-width: 80%;
+	margin-bottom: 10px;
+
+	text-align: center;
+	padding-top: 10px;
+	font-family: 'Fredoka One', cursive;
+}
+#rightsideMain .new {
+	width: 129px;
+	height: 180px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 23px; 
+	border: solid;
+	cursor: pointer;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+#rightsideMain div img {
+	width: 125px;
+	height: 125px;
+	border: solid;
+	border-radius: 20px; 
+	cursor: pointer;
+}
+
+.new p {
+	font-size: 10px;
+	padding: 5px;
+}
+
+.card-img-top {
+	filter: sepia();
+}
+
+.card-img-top:hover {
+	filter: none;
+}
+
+#contentBody {
+		background:
+		repeating-linear-gradient(
+			-45deg,
+			transparent,
+			transparent 25%,
+			tomato 0,
+			tomato 50%
+		)
+		repeating-linear-gradient(
+			45deg,
+			transparent,
+			transparent 25%,
+			dodgerblue 0,
+			dodgerblue 50%
+		), wheat;
+
+	background-size: 10em 10em;
+	background-blend-mode: multiply;
 }

@@ -14,6 +14,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
 		<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 		<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="js/font.js"></script>
 		
 	</head>
@@ -40,7 +41,7 @@
 								<a href="about.html" class="size nav-link">APIE MUS</a>
 							</li>
 							<li class="nav-item">
-								<a id="gameButton" href="" class="size nav-link">ZAIDIMAS</a>
+								<a id="gameButton" href="game.html" class="size nav-link">ZAIDIMAS</a>
 							</li>
 						</ul>
 
@@ -54,10 +55,43 @@
 		</header>
 
 		<main>
-	    	<div class="container marketing pt-5">
-		    	<div class="row featurette">
+			<div class="container pt-5">
+				<div class="row">
+					<div class="col-md-5">
+			            <h2 class="featurette-heading">Mes esame Gigabaitas forumas. <span class="text-muted">Čia yra laukiami visi.</span></h2>
+			            <br>
+			            <p class="lead">Šitoje svetainėje galite dalintis savo kompiuterių nuotraukomis, bei jų aprašymais. Galite pasisemti įdėjų arba jas suteikti kitiems. </p>
+			            <p class="lead">Registracija nebūtina, tačiau jei norite pradėti kelti nuotraukas galite pradėti jau dabar: </p>
+			            <a id="registerButtonInMain" href="register.html" class="btn btn-success btn-lg">REGISTRUOTIS</a>
+					</div>
+					  
+					<div id="specificPhoto" class="col-md-5">
+		            	<img class="featurette-image img-fluid mx-auto" style="width: 100%; height: 500px; border-radius: 25px;" src="https://p0.pikist.com/photos/489/757/macbook-laptop-computer-bed-sheets-technology-shop-working-editing-night-d-ark.jpg" data-holder-rendered="true">
+					</div>
 
-		          	<div class="col-md-6">
+					<div class="col-xl-2" id="rightside" style="border-radius: 25px; "><h5>NAUJIENOS</h5>
+		            	<div id="rightsideMain"> 
+								<div class="new">
+									<img src="images/pc1.jpg" alt="Computer">
+									<div style="font-weight: bold; font-style: italic; font-size: 14px;">Naujas zaidybinis kompiuteris</div>
+								</div>
+								<div class="new">
+									<img src="images/pc2.jpg" alt="Computer">
+									<div style="font-weight: bold; font-style: italic; font-size: 14px;">Naujas kurybinis kompiuteris</div>
+								</div>
+								<div class="new">
+									<img src="images/pc3.jpg" alt="Computer">
+									<div style="font-weight: bold; font-style: italic; font-size: 14px;">Naujas mokslu kompiuteris</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--
+	    	<div class="container marketing pt-5">
+		    	<div class="row mb-3" style="align-content: center;">
+
+		          	<div class="col-md-5">
 			            <h2 class="featurette-heading">Mes esame Gigabaitas forumas. <span class="text-muted">Čia yra laukiami visi.</span></h2>
 			            <br>
 			            <p class="lead">Šitoje svetainėje galite dalintis savo kompiuterių nuotraukomis, bei jų aprašymais. Galite pasisemti įdėjų arba jas suteikti kitiems. </p>
@@ -65,30 +99,44 @@
 			            <a id="registerButtonInMain" href="register.html" class="btn btn-success btn-lg">REGISTRUOTIS</a>
 		          	</div>
 
-		          	<div class="col-md-6">
-		            	<img class="featurette-image img-fluid mx-auto" style="width: 500px; height: 500px; margin-bottom: 50px;" src="https://p0.pikist.com/photos/489/757/macbook-laptop-computer-bed-sheets-technology-shop-working-editing-night-d-ark.jpg" data-holder-rendered="true">
-		          	</div>
-
-		        </div>
-	    	</div>
+		          	<div class="col-md-5">
+		            	<img class="featurette-image img-fluid mx-auto" style="width: 100%; height: 500px;" src="https://p0.pikist.com/photos/489/757/macbook-laptop-computer-bed-sheets-technology-shop-working-editing-night-d-ark.jpg" data-holder-rendered="true">
+					</div>
+					<div id="rightside" class="col-xl-2" style="border-radius: 25px;">
+		            	<div style="text-align: center;"> STATISTIKA
+							<div>
+								<img class="featurette-image img-fluid mx-auto" style="max-width: 150px; max-height: 150px;" src="images/pc1.jpg" data-holder-rendered="true">
+							</div>
+							<div>
+								<img class="featurette-image img-fluid mx-auto" style="max-width: 150px; max-height: 150px;" src="images/pc2.jpg"  data-holder-rendered="true">
+							</div>
+							<div>
+								<img class="featurette-image img-fluid mx-auto" style="max-width: 150px; max-height: 150px;" src="images/pc3.jpg"  data-holder-rendered="true">
+							</div>
+						</div>
+					</div>
+				</div>
+	    	</div>-->
 
 	    </main>
 
 		<footer class="bg-dark">
 	    	<div class="container">
 	      		<div class="row">					
-					<div class="col-3">
-						<p>Made by Kornelijus Čepas</p>
+					<div class="col-md-3">
+						Made by Kornelijus Čepas
 					</div>
-					<div class="col-3">
-						<button class="btn btn-light" onclick="darkButtonTrigger()" style="padding: 2px;">Tamsusis režimas</button>
+					<div class="col-md-3">
+						<button class="btn btn-light" onclick="darkButtonTrigger()" style="padding: 2px;"><a>Tamsusis režimas</a></button>
 						<script src="js/dark.js"></script>
 					</div>		
-					<div class="col-3">
-						<input id="sizeButton" type="button" value="-" class="btn btn-outline-primary" onclick="decreaseFontSizeBy1px()">
-						<input id="sizeButton" type="button" value="+" class="btn btn-outline-primary" onclick="increaseFontSizeBy1px()">
+					<div class="col-md-3">
+						<button id="sizeButton" class="btn btn-light" onclick="decreaseFontSizeBy1px()" >-</button>
+						Font
+						<button id="sizeButton" class="btn btn-light" onclick="increaseFontSizeBy1px()" >+</button>
+						<script src="js/font.js"></script>
 					</div>		
-					<div class="col-3">
+					<div class="col-md-3">
 						<a class="back-to-top" href="#"> &uarr; Grįžti į viršų &uarr;</a>
 					</div>
 				</div>      

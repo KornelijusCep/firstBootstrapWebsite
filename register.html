@@ -39,7 +39,7 @@
 								<a href="about.html" class="nav-link">APIE MUS</a>
 							</li>
 							<li class="nav-item">
-								<a id="gameButton" href="" class="nav-link">ZAIDIMAS</a>
+								<a id="gameButton" href="game.html" class="nav-link">ZAIDIMAS</a>
 							</li>
 						</ul>
 
@@ -71,7 +71,7 @@
 			            <input name="repeatPassword" type="password" class="form-control" placeholder="Pakartokite slaptažodį">
 			        </div>
 			        <div class="form-group">
-			            <button type="submit" class="btn btn-primary btn-block">REGISTRUOTIS</button>
+			            <button id="btn1" type="submit" class="btn btn-primary btn-block">REGISTRUOTIS</button>
 			        </div>      
 				    </form>
 				    <p class="text-center">Turi paskyra svetaineje? Spausk <a href="login.html">čia</a></p>
@@ -81,22 +81,25 @@
 		<footer class="bg-dark">
 	    	<div class="container">
 	      		<div class="row">					
-					<div class="col-3">
-						<p>Made by Kornelijus Čepas</p>
+					<div class="col-md-3">
+						Made by Kornelijus Čepas
 					</div>
-					<div class="col-3">
-						<button class="btn btn-light" onclick="darkButtonTrigger()" style="padding: 2px;">Tamsusis režimas</button>
+					<div class="col-md-3">
+						<button class="btn btn-light" onclick="darkButtonTrigger()" style="padding: 2px;"><a>Tamsusis režimas</a></button>
 						<script src="js/dark.js"></script>
 					</div>		
-					<div class="col-3">
-						<input id="sizeButton" type="button" value="-" class="btn btn-outline-primary" onclick="decreaseFontSizeBy1px()">
-						<input id="sizeButton" type="button" value="+" class="btn btn-outline-primary" onclick="increaseFontSizeBy1px()">
+					<div class="col-md-3">
+						<button id="sizeButton" class="btn btn-light" onclick="decreaseFontSizeBy1px()" >-</button>
+						Font
+						<button id="sizeButton" class="btn btn-light" onclick="increaseFontSizeBy1px()" >+</button>
+						<script src="js/font.js"></script>
 					</div>		
-					<div class="col-3">
+					<div class="col-md-3">
 						<a class="back-to-top" href="#"> &uarr; Grįžti į viršų &uarr;</a>
 					</div>
 				</div>      
 			</div>
 		</footer>
+
 	</body>
 </html>

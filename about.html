@@ -36,7 +36,7 @@
 								<a href="about.html" class="nav-link">APIE MUS</a>
 							</li>
 							<li class="nav-item">
-								<a id="gameButton" href="" class="nav-link">ZAIDIMAS</a>
+								<a id="gameButton" href="game.html" class="nav-link">ZAIDIMAS</a>
 							</li>
 						</ul>
 
@@ -56,7 +56,7 @@
 
 			<div class="container marketing pt-5">
 		    	<div class="row featurette">
-		          	<div class="col-md-6 order-md-2">
+		          	<div class="col-md-5">
 		            	<h2 class="featurette-heading"> Mes esame komanda, kuriai rūpi visų nuomonė.
 							<span class="text-muted"> Visi laukiami :)</span></h2>
 		            	<p class="lead"> 
@@ -65,11 +65,27 @@
 							kitus bendraminčius su tokiu pat pomėgių - KOMPIUTERIAI. 
 						</p>
 		          	</div>
-		          	<div class="col-md-6 order-md-1">
+		          	<div class="col-md-5">
 						<img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" 
 						src="https://assets.entrepreneur.com/content/3x2/2000/20190823150431-GettyImages-1077565558.jpeg" 
-						data-holder-rendered="true" style="width: 500px; height: 500px;">
-		          	</div>
+						data-holder-rendered="true" style="width: 100%; height: 500px; border-radius: 25px;">
+					</div>
+					<div class="col-xl-2" id="rightside" style="border-radius: 25px; "><h5>NAUJIENOS</h5>
+		            	<div id="rightsideMain"> 
+								<div class="new">
+									<img src="images/pc1.jpg" alt="Computer">
+									<div style="font-weight: bold; font-style: italic; font-size: 14px;">Naujas zaidybinis kompiuteris</div>
+								</div>
+								<div class="new">
+									<img src="images/pc2.jpg" alt="Computer">
+									<div style="font-weight: bold; font-style: italic; font-size: 14px;">Naujas kurybinis kompiuteris</div>
+								</div>
+								<div class="new">
+									<img src="images/pc3.jpg" alt="Computer">
+									<div style="font-weight: bold; font-style: italic; font-size: 14px;">Naujas mokslu kompiuteris</div>
+								</div>
+						</div>
+					</div>
 	        	</div>
 	    	</div>
 	    </main>
@@ -78,18 +94,20 @@
 		<footer class="bg-dark">
 	    	<div class="container">
 	      		<div class="row">					
-					<div class="col-3">
-						<p>Made by Kornelijus Čepas</p>
+					<div class="col-md-3">
+						Made by Kornelijus Čepas
 					</div>
-					<div class="col-3">
-						<button class="btn btn-light" onclick="darkButtonTrigger()" style="padding: 2px;">Tamsusis režimas</button>
+					<div class="col-md-3">
+						<button class="btn btn-light" onclick="darkButtonTrigger()" style="padding: 2px;"><a>Tamsusis režimas</a></button>
 						<script src="js/dark.js"></script>
 					</div>		
-					<div class="col-3">
-						<input id="sizeButton" type="button" value="-" class="btn btn-outline-primary" onclick="decreaseFontSizeBy1px()">
-						<input id="sizeButton" type="button" value="+" class="btn btn-outline-primary" onclick="increaseFontSizeBy1px()">
+					<div class="col-md-3">
+						<button id="sizeButton" class="btn btn-light" onclick="decreaseFontSizeBy1px()" >-</button>
+						Font
+						<button id="sizeButton" class="btn btn-light" onclick="increaseFontSizeBy1px()" >+</button>
+						<script src="js/font.js"></script>
 					</div>		
-					<div class="col-3">
+					<div class="col-md-3">
 						<a class="back-to-top" href="#"> &uarr; Grįžti į viršų &uarr;</a>
 					</div>
 				</div>      

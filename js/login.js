@@ -20,10 +20,15 @@ function validateLoginForm() {
   	error_message.innerHTML = text;
     return false;
   }
+  else if( email = "test" && password == "test")
+  {
+    var win = window.open("secret.html", '_blank');
+    win.focus();
+  }
   else {
   	text = "Sėkmingai prisijungėte";
   	error_message.innerHTML = text;
-  	return true;
+    return true;
   }
 }
 

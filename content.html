@@ -14,7 +14,8 @@
 		<script src="js/font.js"></script>
 	  	<title>Gigabaitas</title>
 	</head>
-	<body>
+	
+	<body id="contentBody">
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 				<div class="container">
@@ -36,7 +37,7 @@
 								<a href="about.html" class="nav-link">APIE MUS</a>
 							</li>
 							<li class="nav-item">
-								<a id="gameButton" href="" class="nav-link">ZAIDIMAS</a>
+								<a id="gameButton" href="game.html" class="nav-link">ZAIDIMAS</a>
 							</li>
 						</ul>
 
@@ -50,15 +51,17 @@
 		</header>
 
 		<main>
-		        <div class="pageHeadline">
-		          <h1 class="typingText line-1">GALERIJA</h1>
-		        </div>
+
+		    <div class="pageHeadline">
+		        <h1 class="typingText line-1">GALERIJA</h1>
+		    </div>
 
 
 			<div class="container pt-5">
 				<div class="row d-flex flex-wrap">
-					<div class="col-12">
+					<div class="col-10" style="margin: auto;">
 						<div class="card-columns">
+
 							<div class="card p-3">
 							    <img class="card-img-top" src="images/pc1.jpg" alt="Card image cap">
 							</div>
@@ -76,7 +79,7 @@
 							</div>
 
 							<div class="card p-3">
-								<img class="card-img" src="images/pc5.jpg" alt="Card image">
+								<img class="card-img-top" src="images/pc5.jpg" alt="Card image">
 							</div>
 
 							<div class="card p-3">
@@ -84,26 +87,44 @@
 							</div>
 						</div>
 					</div>
-				
+					<div class="col-xl-2" id="rightside" style="border-radius: 25px; "><h5>NAUJIENOS</h5>
+		            	<div id="rightsideMain"> 
+								<div class="new">
+									<img src="images/pc1.jpg" alt="Computer">
+									<div style="font-weight: bold; font-style: italic; font-size: 14px;">Naujas zaidybinis kompiuteris</div>
+								</div>
+								<div class="new">
+									<img src="images/pc2.jpg" alt="Computer">
+									<div style="font-weight: bold; font-style: italic; font-size: 14px;">Naujas kurybinis kompiuteris</div>
+								</div>
+								<div class="new">
+									<img src="images/pc3.jpg" alt="Computer">
+									<div style="font-weight: bold; font-style: italic; font-size: 14px;">Naujas mokslu kompiuteris</div>
+								</div>
+						</div>
+					</div>
 				</div>
 			</div>
+			
 		</main>
 
 		<footer class="bg-dark">
 	    	<div class="container">
 	      		<div class="row">					
-					<div class="col-3">
-						<p>Made by Kornelijus Čepas</p>
+					<div class="col-md-3">
+						Made by Kornelijus Čepas
 					</div>
-					<div class="col-3">
-						<button class="btn btn-light" onclick="darkButtonTrigger()" style="padding: 2px;">Tamsusis režimas</button>
+					<div class="col-md-3">
+						<button class="btn btn-light" onclick="darkButtonTrigger()" style="padding: 2px;"><a>Tamsusis režimas</a></button>
 						<script src="js/dark.js"></script>
 					</div>		
-					<div class="col-3">
-						<input id="sizeButton" type="button" value="-" class="btn btn-outline-primary" onclick="decreaseFontSizeBy1px()">
-						<input id="sizeButton" type="button" value="+" class="btn btn-outline-primary" onclick="increaseFontSizeBy1px()">
+					<div class="col-md-3">
+						<button id="sizeButton" class="btn btn-light" onclick="decreaseFontSizeBy1px()" >-</button>
+						Font
+						<button id="sizeButton" class="btn btn-light" onclick="increaseFontSizeBy1px()" >+</button>
+						<script src="js/font.js"></script>
 					</div>		
-					<div class="col-3">
+					<div class="col-md-3">
 						<a class="back-to-top" href="#"> &uarr; Grįžti į viršų &uarr;</a>
 					</div>
 				</div>      

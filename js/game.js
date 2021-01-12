@@ -7,7 +7,7 @@ $(document).ready(function() {
   const points = document.querySelector('#points');
   
   // VISI ZODZIAI
-  let words = ['kompiuteris', 'procesorius', 'maitinimo blokas', 'monitorius', 'vaizdo plokste', 'klaviatura', 'pele', 'kamera'];
+  let words = ['kompiuteris', 'procesorius', 'diskas', 'monitorius', 'ausintuvas', 'klaviatura', 'pele', 'kamera'];
   // GYVYBES
   let leftLives;
   // NAUJAS ZODIS
